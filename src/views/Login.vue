@@ -13,32 +13,24 @@
           <v-form @submit.prevent="submitHandler" ref="form">
             <v-card-text>
               <v-text-field
-                v-model="email"
-                :rules="emailRules"
-                type="email"
+               
                 label="Email"
                 placeholder="Email"
                 prepend-inner-icon="mdi-account"
-                required
               />
               <v-text-field
-                      v-model="password"
-                      :rules="passwordRules"
-                      :type="passwordShow?'text':'password'"
                       label="Password"
                       placeholder="Password"
                       prepend-inner-icon="mdi-key"
                       :append-icon="passwordShow ? 'mdi-eye':'mdi-eye-off'"
-                      @click:append="passwordShow = !passwordShow"
-                      required
-              />
+                />
               
             </v-card-text>
             <v-card-actions class="justify-center">
-  			<v-btn flat>
-          <router-link class="text-decoration-none" to="/dashboard">Login</router-link>
+  			<v-btn>
+          	<router-link class="text-decoration-none" to="/dashboard">Login</router-link>
         	</v-btn>            
-		</v-card-actions>
+			</v-card-actions>
           </v-form>
         </v-card>
       </v-col>

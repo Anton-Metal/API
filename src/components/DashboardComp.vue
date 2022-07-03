@@ -21,26 +21,24 @@
     ></v-img>
 
 
-
+	
     <v-card-title>
       {{item.title}}
     </v-card-title>
-
     <v-card-text class="black--text">
      {{item.price}}
     </v-card-text>
-
 	
-	 
+
+	<v-card-actions class="justify-center">
 	<v-btn 
 	class="blue white--text text-center ma-3"
 	color="orange-lighten-2"
 	variant="text"
 	>
 	Add to Cart
-	</v-btn>    
-
-
+	</v-btn>    	
+    </v-card-actions>
    
   </v-card>
   </v-hover>
